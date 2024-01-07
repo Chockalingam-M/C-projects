@@ -1,0 +1,36 @@
+/* C program to Swap Two array without using temp variable*/
+
+#include<stdio.h>
+int main(void)
+{
+    int i,j,a[50],b[50],n1,n2,temp[50];
+    printf("\n Enter the Number of elements in the array 1:");
+    scanf("%d",&n1);
+    printf("\n Enter the elements:");
+    for(i=0;i<n1;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("\n Enter the Number of elements in the array 2:");
+    scanf("%d",&n2);
+    printf("\n Enter the elements:");
+    for(j=0;j<n2;j++)
+    {
+        scanf("%d",&b[j]);
+    }
+    for(i=0,j=0;i<n1,j<n2;i++,j++)
+    {
+        temp[i]=a[i]+b[j];
+        b[j]=temp[i]-b[j];
+        a[i]=temp[i]-a[i];
+    }
+    printf("The reversed order of array is :");
+    for(i=0;i<n1;i++)
+    {
+        printf("\n The First element of array is: %d ",a[i]);
+    }
+    for(j=0;j<n2;j++)
+    {
+        printf("\n The element of second array is %d",b[j]);
+    }
+}
