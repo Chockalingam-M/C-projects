@@ -1,0 +1,34 @@
+/*C program to find the biggest and smallest among the array*/
+
+#include<stdio.h>
+int main(void)
+{
+    int i,a[50],n1,big,low;
+    printf("\n Enter the Number of elements in the array 1:");
+    scanf("%d",&n1);
+    printf("\n Enter the elements:");
+    for(i=0;i<n1;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("\n The entered element are :");
+    for(i=0;i<n1;i++)
+    {
+        printf(" %d",a[i]);
+    }
+    big=0;
+    for(i=0;i<n1;i++)
+    {
+        if(a[i]>big)
+        {
+            big=a[i];
+        }
+        else
+        {
+            low=a[i];
+        }
+    }
+    printf("\n The Biggest among the array is :%d",big);
+    printf("\n The smallest among the array is :%d",low);
+
+}
