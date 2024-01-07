@@ -1,0 +1,24 @@
+/*I have tyed the program to reverse a array in C program*/
+
+#include<stdio.h>
+int main(void)
+{
+    int i,a[50],n1;
+    printf("\n Enter the Number of elements in the array 1:");
+    scanf("%d",&n1);
+    printf("\n Enter the elements:");
+    for(i=0;i<n1;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("\n The entered element are :");
+    for(i=0;i<n1;i++)
+    {
+        printf(" %d",a[i]);
+    }
+    printf("\n The reversed elements are :");
+    for(i=n1;i>=0;i--)
+    {
+        printf(" %d",a[i]);
+    }
+}
