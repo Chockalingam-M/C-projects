@@ -1,0 +1,22 @@
+/*The program in count of the number of boys whose weight is less than 50kgs and height is greater than 170cm */
+
+#include<stdio.h>
+main()
+{
+    int i,height,weight,n,count=0;
+    printf("Enter the number of boys to find it :");
+    scanf("%d",&n);
+    printf("Enter the weight and height of the person");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d%d",&weight,&height);
+        if(weight<50)
+    {
+        if(height>170)
+        {
+            count++;
+        }
+    }
+    }
+    printf("The number of boys inside the category is %d",count);
+}
