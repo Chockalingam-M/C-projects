@@ -1,0 +1,14 @@
+
+#include<stdio.h>
+main()
+{
+    int i,j;
+    printf("Square order");
+    i,j=0;
+    while(i<=10)
+    {
+        printf("\t %d",i*j);
+        i++;
+        j++;
+    }
+}
