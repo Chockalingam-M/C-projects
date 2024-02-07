@@ -1,0 +1,16 @@
+/*In this program pre-increment and post-increment and pre-decrement and post-decrement */
+
+#include<stdio.h>
+main()
+{
+    int a,b,c;
+    printf("Enter the number to be increment or decrement :");
+    scanf("%d",&a);
+    b=a++;
+    c=++a;
+    printf("\n The increment number is %d,%d",b,c);
+    b=a--;
+    c=--a;
+    printf("\n The decrement number is %d,%d",b,c);
+
+}
