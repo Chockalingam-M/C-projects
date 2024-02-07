@@ -1,0 +1,33 @@
+/*This is the real time Example which taken from the Chat-GPT and coded*/
+
+Write a C program that simulates a temperature monitoring system for a greenhouse. The program should prompt the user to input the current temperature inside the greenhouse.
+Based on the temperature entered, the program should provide feedback to the user about the greenhouse conditions using if statements.
+
+Your program should perform the following tasks:
+
+Prompt the user to enter the current temperature inside the greenhouse.
+Read the temperature input from the user.
+Use if statements to determine the greenhouse conditions based on the temperature entered:
+If the temperature is below 10 degrees Celsius, print a message indicating that it's too cold for most plants.
+If the temperature is between 10 and 25 degrees Celsius (inclusive), print a message indicating that the conditions are suitable for most plants.
+If the temperature is above 25 degrees Celsius, print a message indicating that it's too hot for most plants. */
+
+#include<stdio.h>
+main()
+{
+    int temp;
+    printf("\n Enter the current temperature in the green house in Celsius:");
+    scanf("%d",&temp);
+    if(temp<10)
+    {
+        printf("It's too cold for most plants");
+    }
+    if(temp>10 && temp<25)
+    {
+        printf(" The conditions are suitable for most plants");
+    }
+    if(temp>25)
+    {
+        printf("It's too hot for most plants");
+    }
+}
