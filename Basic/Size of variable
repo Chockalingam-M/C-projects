@@ -1,0 +1,10 @@
+/*How to find the sizeof any variable using the C program*/
+
+#include<stdio.h>
+main()
+{
+    int a;
+    char b;
+    printf("\n The size of the int is :%d",sizeof(a));
+    printf("\n The size of the char is :%d",sizeof(b));
+}
