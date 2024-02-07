@@ -1,0 +1,31 @@
+/*  Write a C program that checks the eligibility of a person to vote in an election based on their age. 
+The program should prompt the user to enter their age and then determine if they are eligible to vote or not.
+
+Your program should perform the following tasks:
+
+Prompt the user to enter their age.
+Read the age input from the user.
+Use an if-else statement to check if the age entered is equal to or greater than 18.
+If the age is 18 or older, print a message indicating that the person is eligible to vote.
+If the age is less than 18, print a message indicating that the person is not eligible to vote.  */
+
+#include<stdio.h>
+main()
+{
+    int age;
+    printf("Enter the age of the person :");
+    scanf("%d",&age);
+    if(age>=18)
+    {
+        printf("You are elligble to Vote");
+    }
+    else if(age<=0)
+    {
+        printf("Invalid age");
+    }
+    else if(age<18)
+    {
+        printf("Not elligble to vote");
+    }
+  
+}
