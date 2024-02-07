@@ -1,0 +1,10 @@
+/*How to find the address of the variable ,it can be given in decimal,hexadecimal,octal*/
+
+#include<stdio.h>
+main()
+{
+    int a;
+    printf("Enter the Value:");
+    scanf("%d",&a);
+    printf("\n The address of the variable is %x",&a);
+}
