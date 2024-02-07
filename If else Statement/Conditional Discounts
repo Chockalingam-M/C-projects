@@ -1,0 +1,42 @@
+/* Real time application program taken from the Chat-GPT.
+       Write a C program for a shopping application that calculates the total cost of items purchased by a customer. 
+The application should apply a discount based on the total cost of items purchased. The discount rules are as follows:
+
+If the total cost is greater than or equal to $1000, apply a 15% discount.
+If the total cost is between $500 and $999.99, apply a 10% discount.
+If the total cost is less than $500, no discount is applied.
+Your program should perform the following tasks:
+
+--->Prompt the user to enter the total cost of items purchased.
+--->Calculate the total cost after applying the discount based on the provided rules.
+--->Display the original total cost, the discount amount (if any), and the final total cost to the user.
+
+coding:
+
+#include<stdio.h>
+main()
+{
+    int cost,discount,i;
+    float disc;
+    printf("Enter the total cost of the item : ");
+    scanf("%d",&cost);
+    if(cost<500)
+    {
+        printf("\n Discount is not applied to the item");
+    }
+    else if(cost>=500 && cost<1000)
+    {
+        printf("\n The discount is applied for the product");
+        disc=cost*0.1;
+        i=cost-disc;
+        printf("\nThe discounted amount :%f",disc);
+        printf("\n The amount after discount %d",i);    }
+    else if(cost>=1000)
+    {
+        printf("\n The discount is applied for the product");
+        disc=(cost*15)/100;
+        i=cost-disc;
+        printf("\nThe discounted amount :%f",disc);
+        printf("\nThe amount after discount %d",i);
+    }
+}
