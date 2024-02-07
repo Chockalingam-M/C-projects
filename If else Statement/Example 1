@@ -1,0 +1,15 @@
+/*The program in read four values a,b,c,d from the terminals and evaluates the ratio of (a+b) to (c-d) and print the result ,If c-d is not equal to zero */
+
+#include <stdio.h>
+int main() {
+    int a,b,c,d;
+    printf("Enter the value of a and b: ");
+    scanf("%d%d",&a,&b);
+    printf("\n Enter the value of c and d: ");
+    scanf("%d%d",&c,&d);
+    if(c-d!=0)
+    {
+        printf("\n The ratio of a+b/c-d is ");
+        printf("%d",(a+b)/(c-d));
+    }
+}
