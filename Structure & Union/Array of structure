@@ -1,0 +1,26 @@
+/*This is the program to write the structure of Array which is used to create a table or the database*/
+
+#include<stdio.h>
+
+struct student{
+    int rollno;
+    char name[20];
+    float mark;
+}s1[50];
+
+main()
+{
+    int i,n;
+    printf("Enter the number of student");
+    scanf("%d",&n);
+    printf("\n Enter the detail of the student");
+    for(i=0;i<n;i++)
+    {
+        scanf("\n %d%s%f",&s1[i].rollno,s1[i].name,&s1[i].mark);
+    }
+    printf("\n Entered element is :");
+    for(i=0;i<n;i++)
+    {
+        printf("\n %d \t %s \t %f",s1[i].rollno,s1[i].name,s1[i].mark);
+    }
+}
